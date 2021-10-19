@@ -28,5 +28,10 @@ public class HolaMundo {
         
         var miVariableCadena2 = "Nueva Cadena";
         System.out.println("miVariableCadena2 = " + miVariableCadena2);
+        
+        var MiVariable = 1;
+        var _miVariable = 2;
+        var $miVariable = 3;
+        
     }
 }
