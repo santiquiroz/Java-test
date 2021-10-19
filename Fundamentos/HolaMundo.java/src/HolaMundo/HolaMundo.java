@@ -10,18 +10,13 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        /*
-            tipos primitivos flotante: float y double
-        */
+        var numeroEntero = 10;
+        System.out.println("numeroEntero = " + numeroEntero);
         
-        float numeroFloat = (float)3.4028235E38;
-        System.out.println("numeroFloat = " + numeroFloat);
-        System.out.println("Valor minimo tipo float: " + Float.MIN_VALUE);
-        System.out.println("Valor minimo tipo float: " + Float.MAX_VALUE);
-        
-        double numeroDouble = 1.7976931348623157E308;
+        var numeroDouble = 10.0;
         System.out.println("numeroDouble = " + numeroDouble);
-        System.out.println("Valor minimo tipo double: " + Double.MIN_VALUE);
-        System.out.println("Valor minimo tipo double: " + Double.MAX_VALUE);
+        
+        var numeroFloat = 10.0F;
+        System.out.println("numeroFloat = " + numeroFloat);
     }
 }
