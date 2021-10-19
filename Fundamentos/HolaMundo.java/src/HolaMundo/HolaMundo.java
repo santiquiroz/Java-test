@@ -10,31 +10,23 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        char miCaracter = 'a';
-        System.out.println("miCaracter = " + miCaracter);
+        boolean varBoolean = true;
+        System.out.println("varBoolean = " + varBoolean);
         
-        char varChar = '\u0021';
-        System.out.println("varChar = " + varChar);
+        if (varBoolean == true) {
+            System.out.println("La bandera es verdadera");
+        }
+        else{
+            System.out.println("La bandera es falsa");
+        }
         
-        char varCharDecimal = 33;
-        System.out.println("varCharDecimal = " + varCharDecimal);
-        
-        char varCharSimbolo = '!';
-        System.out.println("varCharSimbolo = " + varCharSimbolo);
-        
-        var varChar1 = '\u0021';
-        System.out.println("varChar1 = " + varChar1);
-        
-        var varCharDecimal2 = 33;
-        System.out.println("varCharDecimal2 = " + varCharDecimal2);
-        
-        var varCharSimbolo3 = '!';
-        System.out.println("varCharSimbolo3 = " + varCharSimbolo3);
-        
-        int variableEnteraSimbolo = '!';
-        System.out.println("variableEnteraSimbolo = " + variableEnteraSimbolo);
-        
-        int letra = 'a';
-        System.out.println("letra = " + letra);
+        var edad = 10;
+        //var esAdulto = edad >= 18;
+        if (edad >= 18) {
+            System.out.println("Es mayor de edad");
+        }
+        else{
+            System.out.println("Es menor de edad");
+        }
     }
 }
