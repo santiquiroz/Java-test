@@ -11,26 +11,13 @@ public class HolaMundo {
 
     public static void main(String args[]) {
         int a=3, b=2;
-        var resultado = a + b;
-        System.out.println("resultado suma = " + resultado);
+        int c = a + 5 - b;
+        System.out.println(c);
         
-        resultado = a - b;
-        System.out.println("resultado resta = " + resultado );
+        a += 1; //a = a + 1
+        System.out.printl(a);
         
-        resultado = a * b;
-        System.out.println("resultado multiplicacion= " + resultado);
-        
-        var resultado2 = 3.0 / b;
-        System.out.println("resultado division = " + resultado2);
-        
-        resultado = a % b;
-        System.out.println("resultado2 modulo = " + resultado);
-        
-        if(b % 2 == 0){
-            System.out.println("Es numero par");
-        }
-        else{
-            System.out.println("Es numero impar");
-        }
+        a -= 2;
+        System.out.println(a);
     }
 }
