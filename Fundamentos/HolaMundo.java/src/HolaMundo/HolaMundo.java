@@ -10,22 +10,27 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        String nombre;
-        int id;
-        double precio;
-        boolean envioGratuito;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Proporciona el nombre:");
-        nombre = scanner.nextLine();
-        System.out.println("Proporciona el id:");
-        id = Integer.parseInt(scanner.nextLine());
-        System.out.println("Proporciona el precio");
-        precio = Double.parseDouble(scanner.nextLine());
-        System.out.println("Proporciona el envio gratuito:");
-        envioGratuito = Boolean.parseBoolean(scanner.nextLine());
+        int a=3, b=2;
+        var resultado = a + b;
+        System.out.println("resultado suma = " + resultado);
         
-        char simbolo = '$';
+        resultado = a - b;
+        System.out.println("resultado resta = " + resultado );
         
-        System.out.println(nombre + " #" + id + "\n" + "Precio: " + simbolo + precio + "\n" + "Envio gratuito: " + envioGratuito);
+        resultado = a * b;
+        System.out.println("resultado multiplicacion= " + resultado);
+        
+        var resultado2 = 3.0 / b;
+        System.out.println("resultado division = " + resultado2);
+        
+        resultado = a % b;
+        System.out.println("resultado2 modulo = " + resultado);
+        
+        if(b % 2 == 0){
+            System.out.println("Es numero par");
+        }
+        else{
+            System.out.println("Es numero impar");
+        }
     }
 }
