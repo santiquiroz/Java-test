@@ -6,32 +6,20 @@ package HolaMundo;
  * @author santi
  */
 public class HolaMundo {
-    public static void main(String args[]){
-        //Definimos la variable
-        int miVariableEntera = 10;
-        System.out.println(miVariableEntera);
+
+    public static void main(String args[]) {
+        var usuario = "Juan xd";
+        var titulo = "don Ingeniero";
+
+        var union = titulo + " " + usuario;
+        System.out.println("union = " + union);
         
-        //Modificamos el valor de la varaible
-        miVariableEntera = 5;        
-        System.out.println(miVariableEntera);
+        var i = 3;
+        var j = 4;
         
-        String miVariableCadena = "Salu2";
-        System.out.println(miVariableCadena);
-        
-        miVariableCadena = "aGod";
-        System.out.println(miVariableCadena);
-        
-        // var Inferencia de tipos en Java
-        
-        var miVariableEntera2 = 10;
-        System.out.println(miVariableEntera2);
-        
-        var miVariableCadena2 = "Nueva Cadena";
-        System.out.println("miVariableCadena2 = " + miVariableCadena2);
-        
-        var MiVariable = 1;
-        var _miVariable = 2;
-        var $miVariable = 3;
-        
+        System.out.println(i + j);//se realiza suma de numeros
+        System.out.println(i + j +usuario);//Evaluacion de izquierda a derecha, hace suma antes
+        System.out.println(usuario + i + j);//contexto cadena
+        System.out.println(usuario + (i + j));//parentesis cambian orden
     }
 }
