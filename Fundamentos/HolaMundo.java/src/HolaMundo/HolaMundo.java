@@ -10,12 +10,11 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        System.out.println("Escribe tu nombre");
+        System.out.println("Proporciona el titulo:");
         Scanner consola = new Scanner(System.in);
-        var usuario = consola.nextLine();
-        System.out.println("usuario = " + usuario);
-        System.out.println("Escribe el titulo:");
         var titulo = consola.nextLine();
-        System.out.println("Resultado = " + titulo + " " + usuario);
+        System.out.println("Proporciona el autor:");
+        var autor = consola.nextLine();
+        System.out.println(titulo + " fue escrito por " + autor);
     }
 }
