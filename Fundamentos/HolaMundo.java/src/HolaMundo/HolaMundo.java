@@ -10,17 +10,16 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var x = 5;
-        var y = 10;
-        var z = ++x + y--;
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-        System.out.println("z = " + z);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Proporciona el alto: ");
+        var alto = Integer.parseInt(scanner.nextLine());
+        System.out.println("Proporciona el ancho: ");
+        var ancho = Integer.parseInt(scanner.nextLine());
         
-        var resultado = 4 + 5 * 6 / 3;//4 + ((5 * 6) / 3)
-        System.out.println("resultado = " + resultado);
+        var area = alto * ancho;
+        var perimetro = (alto + ancho) * 2;
         
-        resultado = (4 + 5) * 6 / 3;
-        System.out.println("resultado = " + resultado);
+        System.out.println("Area: " + area);
+        System.out.println("Perimetro: "+ perimetro);
     }
 }
