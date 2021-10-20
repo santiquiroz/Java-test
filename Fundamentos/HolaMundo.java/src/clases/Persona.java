@@ -9,6 +9,7 @@ public class Persona {
     String nombre;
     String apellido;
     
+    //metodos de la clase
     public void desplegarInformacion(){
         System.out.println("Nombre: " + nombre);
         System.out.println("apellido = " + apellido);
