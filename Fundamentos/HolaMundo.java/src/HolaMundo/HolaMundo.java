@@ -11,15 +11,10 @@ public class HolaMundo {
 
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Proporciona el alto: ");
-        var alto = Integer.parseInt(scanner.nextLine());
-        System.out.println("Proporciona el ancho: ");
-        var ancho = Integer.parseInt(scanner.nextLine());
-        
-        var area = alto * ancho;
-        var perimetro = (alto + ancho) * 2;
-        
-        System.out.println("Area: " + area);
-        System.out.println("Perimetro: "+ perimetro);
+        System.out.println("Proporciona el numero1");
+        var numero1 = Integer.parseInt(scanner.nextLine());
+        System.out.println("Proporciona el numero2");
+        var numero2 = Integer.parseInt(scanner.nextLine());
+        System.out.println("El numero mayor es: "+((numero1 > numero2) ? numero1 : numero2 ));
     }
 }
