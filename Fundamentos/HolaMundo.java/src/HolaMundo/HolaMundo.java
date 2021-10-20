@@ -10,34 +10,27 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var a = 3;
-        var b = 2;
+        var a = 8;
+        var valorMinimo = 0;
+        var valorMacimo = 10;
         
-        var c = (a == b);
-        System.out.println("c = " + c);
-        
-        var d = a != b;
-        System.out.println("d = " + d);
-        
-        var cadena = "Hola";
-        var cadena2 = "Hola";
-        var e = cadena == cadena2;// compara referencia de objetos 
-        System.out.println("e = " + e);
-        
-        var f = cadena.equals(cadena2);// comparamos contenidos de cadenas
-        System.out.println("f = " + f);
-        
-        var g = a >= b;// mayor que> o mayor igual >=
-        System.out.println("g = " + g);
-        
-        if (a % 2 == 0) {
-            System.out.println("Es numero par");
+        var resultado = a >= 0 && a <= 10;
+        System.out.println("resultado = " + resultado);
+        if (resultado) {
+            System.out.println("Dentro del rango");
         }
         else{
-            System.out.println("Es numero impar");
+            System.out.println("Fuera del rango");
         }
         
+        var vacaciones = false;
+        var diaDescanso = true;
         
-        
+        if (vacaciones || diaDescanso) {
+            System.out.println("Padre puede asistir al juego del hijo");
+        }
+        else{
+            System.out.println("El padre esta ocupado");
+        }
     }
 }
