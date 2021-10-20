@@ -11,39 +11,20 @@ public class HolaMundo {
 
     public static void main(String args[]) {
         var a = 3;
-        var b = -a;
-        System.out.println(a);
-        System.out.println(b);
+        var b = 2;
         
-        var c = true;
-        var d = !c;
-        System.out.println(c);
-        System.out.println(d);
+        var c = (a == b);
+        System.out.println("c = " + c);
         
-        //incremento
-        //1.preincremento (simbolo antes de la variable)
-        var e = 3;
-        var f = ++e;
-        System.out.println(e);
-        System.out.println(f);
-        //2.postincremento (simbolo despues de la variable)
-        var g = 5;
-        var h = g++;
-        System.out.println(g);
-        System.out.println(h);
+        var d = a != b;
+        System.out.println("d = " + d);
         
-        //decremento
-        //1.predecremento
-        var i = 2;
-        var j = --i;
-        System.out.println(i);
-        System.out.println(j);
+        var cadena = "Hola";
+        var cadena2 = "Hola";
+        var e = cadena == cadena2;// compara referencia de objetos 
+        System.out.println("e = " + e);
         
-        //2.postdecremento
-        var k = 4;
-        var l = k--;
-        System.out.println(k);
-        System.out.println(l);
-        
+        var f = cadena.equals(cadena2);// comparamos contenidos de cadenas
+        System.out.println("f = " + f);
     }
 }
