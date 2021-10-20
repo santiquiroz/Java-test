@@ -26,5 +26,18 @@ public class HolaMundo {
         
         var f = cadena.equals(cadena2);// comparamos contenidos de cadenas
         System.out.println("f = " + f);
+        
+        var g = a >= b;// mayor que> o mayor igual >=
+        System.out.println("g = " + g);
+        
+        if (a % 2 == 0) {
+            System.out.println("Es numero par");
+        }
+        else{
+            System.out.println("Es numero impar");
+        }
+        
+        
+        
     }
 }
