@@ -10,27 +10,11 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var a = 8;
-        var valorMinimo = 0;
-        var valorMacimo = 10;
-        
-        var resultado = a >= 0 && a <= 10;
+        var resultado = ( 1 > 2 ) ? "verdadero" : "falso";
         System.out.println("resultado = " + resultado);
-        if (resultado) {
-            System.out.println("Dentro del rango");
-        }
-        else{
-            System.out.println("Fuera del rango");
-        }
         
-        var vacaciones = false;
-        var diaDescanso = true;
-        
-        if (vacaciones || diaDescanso) {
-            System.out.println("Padre puede asistir al juego del hijo");
-        }
-        else{
-            System.out.println("El padre esta ocupado");
-        }
+        var numero = 9;
+        resultado = (numero % 2 == 0) ? "numero par" : "numero impar";
+        System.out.println("resultado = " + resultado);
     }
 }
