@@ -10,23 +10,29 @@ import java.util.Scanner;
 public class HolaMundo {
     
     public static void main(String args[]) {
-        var mes = 1;
-        var estacion = "Estacion desconocida";
-        
-        switch(mes){
-            case 1: case 2: case 12:
-                estacion = "Invierno";
-                break;
-            case 3: case 4: case 5:
-                estacion = "Primavera";
-                break;
-            case 6: case 7: case 8:
-                estacion = "Verano";
-                break;
-            case 9: case 10: case 11:
-                estacion = "Otonio";
-                break;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Proporciona un valor entre 0 y 10: ");
+        var numero = Integer.parseInt(scanner.nextLine());
+        var nota = "Nota desconocida";
+        if (0 >= numero && numero < 6) {
+            nota = "F";
         }
-        System.out.println("estacion = " + estacion);
+        else{
+            switch(numero){
+                case 6:
+                    nota = "D";
+                    break;
+                case 7:
+                    nota = "C";
+                    break;
+                case 8:
+                    nota = "B";
+                    break;
+                case 9: case 10:
+                    nota = "A";
+                    break;
+            }
+        }
+        System.out.println("nota = " + nota);
     }
 }
