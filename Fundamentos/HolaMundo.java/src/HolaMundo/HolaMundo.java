@@ -10,25 +10,23 @@ import java.util.Scanner;
 public class HolaMundo {
     
     public static void main(String args[]) {
-        var numero = 2;
-        var numeroTexto = "Valor desconocido";
+        var mes = 1;
+        var estacion = "Estacion desconocida";
         
-        switch(numero){
-            case 1:
-                numeroTexto = "Numero uno";
+        switch(mes){
+            case 1: case 2: case 12:
+                estacion = "Invierno";
                 break;
-            case 2:
-                numeroTexto = "Numero dos";
+            case 3: case 4: case 5:
+                estacion = "Primavera";
                 break;
-            case 3:
-                numeroTexto = "Numero tres";
+            case 6: case 7: case 8:
+                estacion = "Verano";
                 break;
-            case 4:
-                numeroTexto = "Numero cuatro";
+            case 9: case 10: case 11:
+                estacion = "Otonio";
                 break;
-            default:
-                numeroTexto = "Caso no encontrado";            
         }
-        System.out.println("numeroTexto = " + numeroTexto);
+        System.out.println("estacion = " + estacion);
     }
 }
