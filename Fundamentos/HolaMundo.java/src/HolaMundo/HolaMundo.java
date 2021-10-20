@@ -10,9 +10,11 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
+        
+        inicio:
         for (var contador = 0; contador < 10; contador++) {
             if (contador % 2 != 0) {
-                continue;
+                continue inicio;
             }
             System.out.println("contador = " + contador);
         }
