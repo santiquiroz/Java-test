@@ -10,28 +10,21 @@ import java.util.Scanner;
 public class HolaMundo {
     
     public static void main(String args[]) {
-        var condicion = false;
+        var mes = 4;
+        var estacion = "Estacion desconocida";
         
-        if (condicion) {
-            System.out.println("Condicion verdadera");
-        } else {
-            System.out.println("Condicion falsa");
+        if (mes == 1 || mes == 2 || mes == 12) {
+            estacion = "invierno";
         }
-        
-        var numero = 5;
-        var numeroTexto = "Numero desconocido";
-        
-        if (numero == 1) {
-            numeroTexto = "Numero uno";
-        } else if (numero == 2) {
-            numeroTexto = "Numero dos";
-        } else if (numero == 3) {
-            numeroTexto = "Numero tres";
-        } else if (numero == 4) {
-            numeroTexto = "Numero cuatro";
-        } else{
-            numeroTexto = "Numero no encontrado";
+        else if (mes == 3 || mes == 4 || mes == 5) {
+            estacion = "primavera";
         }
-        System.out.println("numeroTexto = " + numeroTexto);
+        else if (mes == 6 || mes == 7 || mes == 8) {
+            estacion = "verano";
+        }
+        else if (mes == 9 || mes == 10 || mes == 11) {
+            estacion = "otono";
+        }
+        System.out.println("estacion = " + estacion);
     }
 }
