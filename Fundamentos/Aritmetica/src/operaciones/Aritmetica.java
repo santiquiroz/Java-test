@@ -9,6 +9,11 @@ public class Aritmetica {
     int a;
     int b;
     
+    //Constructor vacio
+    public Aritmetica () {
+        System.out.println("Ejecutando constructor");
+    }
+    
     //Metodo
     public void sumar(){
         int resultado = a + b;
@@ -20,8 +25,8 @@ public class Aritmetica {
     }
     
     public int sumarConArgumentos(int arg1, int arg2){
-        a = arg1;
-        b = arg2;
+        this.a = arg1;
+        this.b = arg2;
         return a+b;
     }
 }
