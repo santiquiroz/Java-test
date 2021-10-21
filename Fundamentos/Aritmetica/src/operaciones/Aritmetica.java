@@ -14,6 +14,12 @@ public class Aritmetica {
         System.out.println("Ejecutando constructor");
     }
     
+    public Aritmetica (int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println("Ejecutando constructor con arg");
+    }
+    
     //Metodo
     public void sumar(){
         int resultado = a + b;
