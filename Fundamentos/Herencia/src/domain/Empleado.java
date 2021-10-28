@@ -8,10 +8,15 @@ public class Empleado extends Persona{
     private int idEmpleado;
     private double sueldo;
     private static int contadorEmpleado;
+    
+    public Empleado() {
+        this.idEmpleado = ++ Empleado.contadorEmpleado;
+    }
 
     public Empleado(String nombre, double sueldo) {
-        super(nombre);
-        this.idEmpleado = ++Empleado.contadorEmpleado;
+//        super(nombre);
+        this();
+        this.nombre = nombre;
         this.sueldo = sueldo;
     }
 
