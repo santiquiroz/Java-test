@@ -8,10 +8,10 @@ import paquete1.Clase1;
  */
 public class ClaseHija extends Clase1{
     public ClaseHija(){
-        super();
-        this.atributoDefault= "Modificacion atributo default";
-        System.out.println("claseHija = " + this.atributoDefault);
-        this.metodoDefault();
+        super("putyp");
+//        this.atributoDefault= "Modificacion atributo default";
+//        System.out.println("claseHija = " + this.atributoDefault);
+//        this.metodoDefault();
     }
 }
 
